@@ -1,0 +1,415 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 380px;
+  overflow: hidden;
+
+  mat-tab-group {
+    height: 100vh;
+
+    .mat-mdc-tab-body-wrapper {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-container {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.spinner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-button {
+  margin-right: 16px;
+}
+
+.summary-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 16px;
+  padding: 4px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 0.9);
+
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .summary-text {
+    font-size: 13px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
+
+#layer-controls {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  border-radius: 5px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  min-width: 200px;
+
+  p {
+    margin: 0 0 8px 0;
+    font-weight: 500;
+  }
+
+  .layer-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .layer-checkbox {
+    width: 100%;
+
+    .mat-checkbox-layout {
+      width: 100%;
+    }
+  }
+
+  .layer-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 8px;
+  }
+
+  .layer-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .layer-name {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+// Terminal Tab Styling
+.terminal-tab-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 48px); // Account for tab header height
+  overflow: hidden;
+}
+
+.terminal-header {
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.02);
+  flex-shrink: 0;
+}
+
+.terminal-filter {
+  width: 100%;
+  margin-bottom: 12px;
+
+  .mat-mdc-select-value {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+
+.terminal-stats {
+  margin-top: 8px;
+
+  mat-chip-listbox {
+    display: flex;
+    gap: 8px;
+  }
+
+  mat-chip {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    mat-icon {
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.terminal-list-container {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+// Terminal Card Layout
+.terminal-card {
+  margin: 8px 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  &.active {
+    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.3);
+    border: 2px solid #3f51b5;
+  }
+}
+
+.terminal-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.terminal-info {
+  flex: 1;
+}
+
+.terminal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.terminal-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #3f51b5;
+}
+
+.terminal-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0,0,0,0.9);
+}
+
+.terminal-number {
+  font-size: 11px;
+  height: 20px;
+  background-color: #3f51b5;
+  color: white;
+  font-weight: 500;
+}
+
+.terminal-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: rgba(0,0,0,0.6);
+}
+
+.location-icon {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  color: rgba(0,0,0,0.4);
+}
+
+.info-button {
+  color: rgba(0,0,0,0.6);
+}
+
+.terminal-stats-row {
+  display: flex;
+  padding: 0 16px 16px 16px;
+  gap: 8px;
+}
+
+.stat-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: rgba(0,0,0,0.02);
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+
+  &.destinations-toggle {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(63, 81, 181, 0.08);
+    }
+
+    mat-icon {
+      transition: transform 0.3s ease;
+
+      &.expanded {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #3f51b5;
+  }
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0,0,0,0.9);
+}
+
+.stat-label {
+  font-size: 11px;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.destinations-section {
+  padding: 0 16px 16px 16px;
+  background-color: rgba(0,0,0,0.02);
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.destination-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 4px;
+  border-left: 3px solid #1976d2;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+.destination-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.destination-city {
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(0,0,0,0.9);
+}
+
+.destination-state {
+  font-size: 11px;
+  color: rgba(0,0,0,0.6);
+}
+
+.destination-count {
+  background-color: #1976d2;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+#legend {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  p {
+    margin: 0 0 5px 0;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+
+  .color-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .step1 { background-color: #2196F3; }
+  .step2 { background-color: #00BCD4; }
+  .step3 { background-color: #4CAF50; }
+  .step4 { background-color: #8BC34A; }
+  .step5 { background-color: #CDDC39; }
+  .step6 { background-color: #FFEB3B; }
+  .step7 { background-color: #FFC107; }
+  .step8 { background-color: #FF9800; }
+  .step9 { background-color: #FF5722; }
+  .step10 { background-color: #F44336; }
+}

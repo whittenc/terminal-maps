@@ -1,0 +1,33 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Custom snackbar styles
+.terminal-snackbar {
+  background-color: #c2185b !important;
+  color: white !important;
+}
+
+.shipping-snackbar {
+  background-color: #1a237e !important;
+  color: white !important;
+}
+
+// Fix for Angular Material chip styling
+.mat-mdc-chip {
+  --mdc-chip-container-height: 32px;
+}
+
+// Google Maps container
+google-map {
+  height: 100% !important;
+  width: 100% !important;
+}

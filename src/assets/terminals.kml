@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Terminal Locations</name>
+    <description>Terminal locations with detailed information</description>
+    <Placemark>
+      <name>Edwardsville</name>
+      <address>145 North Kansas Street Edwardsville IL 62025</address>
+      <description>Edwardsville</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>0</value>
+        </Data>
+        <Data name="Address">
+          <value>145 North Kansas Street</value>
+        </Data>
+        <Data name="City">
+          <value>Edwardsville</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>62025</value>
+        </Data>
+        <Data name="Phone">
+          <value>618 656 3006</value>
+        </Data>
+        <Data name="Manager">
+          <value>President: Lisa Shashek</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>45 </value>
+        </Data>
+        <Data name="Total">
+          <value>45 </value>
+        </Data>
+        <Data name="Opened">
+          <value>1933/1986</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Corporate Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-89.95516,38.8131,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Walker Road</name>
+      <address>2282 Walker Road Windsor ON N8W 3P6</address>
+      <description>Walker Road</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>9</value>
+        </Data>
+        <Data name="Address">
+          <value>2282 Walker Road</value>
+        </Data>
+        <Data name="City">
+          <value>Windsor</value>
+        </Data>
+        <Data name="ST">
+          <value>ON</value>
+        </Data>
+        <Data name="ZIP">
+          <value>N8W 3P6</value>
+        </Data>
+        <Data name="Phone">
+          <value>519-254-2480</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of Windsor</value>
+        </Data>
+        <Data name="Drivers">
+          <value>O</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>06/01/11</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Chrysler</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-82.99297,42.30143,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Belvidere</name>
+      <address>3060 Grant Highway Belvidere IL 61008</address>
+      <description>Belvidere</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>20</value>
+        </Data>
+        <Data name="Address">
+          <value>3060 Grant Highway</value>
+        </Data>
+        <Data name="City">
+          <value>Belvidere</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>61008</value>
+        </Data>
+        <Data name="Phone">
+          <value>815-547-6357</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Noah Olson</value>
+        </Data>
+        <Data name="Drivers">
+          <value>5 </value>
+        </Data>
+        <Data name="Shop">
+          <value>1 </value>
+        </Data>
+        <Data name="Other">
+          <value>8 </value>
+        </Data>
+        <Data name="Total">
+          <value>14 </value>
+        </Data>
+        <Data name="Opened">
+          <value>05/18/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>8 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Chrysler</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-88.65564,42.25043,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cambridge</name>
+      <address>1055 Fountain Street North Cambridge ON N3H 5K2</address>
+      <description>Cambridge</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>22</value>
+        </Data>
+        <Data name="Address">
+          <value>1055 Fountain Street North</value>
+        </Data>
+        <Data name="City">
+          <value>Cambridge</value>
+        </Data>
+        <Data name="ST">
+          <value>ON</value>
+        </Data>
+        <Data name="ZIP">
+          <value>N3H 5K2</value>
+        </Data>
+        <Data name="Phone">
+          <value>None</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of London</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>08/13/08</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-80.37579,43.41652,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Woodstock</name>
+      <address>1717 Dundas Street Woodstock ON N4S 0A4</address>
+      <description>Woodstock</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>23</value>
+        </Data>
+        <Data name="Address">
+          <value>1717 Dundas Street</value>
+        </Data>
+        <Data name="City">
+          <value>Woodstock</value>
+        </Data>
+        <Data name="ST">
+          <value>ON</value>
+        </Data>
+        <Data name="ZIP">
+          <value>N4S 0A4</value>
+        </Data>
+        <Data name="Phone">
+          <value>None</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of London</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>11/03/08</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-80.68852,43.14227,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Aurora</name>
+      <address>3401 Liberty Street Aurora IL 60502</address>
+      <description>Aurora</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>30</value>
+        </Data>
+        <Data name="Address">
+          <value>3401 Liberty Street</value>
+        </Data>
+        <Data name="City">
+          <value>Aurora</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>60502</value>
+        </Data>
+        <Data name="Phone">
+          <value>630-820-1600</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Ken Bowlby</value>
+        </Data>
+        <Data name="Drivers">
+          <value>100 </value>
+        </Data>
+        <Data name="Shop">
+          <value>17 </value>
+        </Data>
+        <Data name="Other">
+          <value>9 </value>
+        </Data>
+        <Data name="Total">
+          <value>126 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/04/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>6 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Dispatch Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-88.2384,41.76645,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Aurora - New</name>
+      <address>270 West Laraway Rd Joliet IL 60436</address>
+      <description>Aurora - New</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>30</value>
+        </Data>
+        <Data name="Address">
+          <value>270 West Laraway Rd</value>
+        </Data>
+        <Data name="City">
+          <value>Joliet</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>60436</value>
+        </Data>
+        <Data name="Phone">
+          <value/>
+        </Data>
+        <Data name="Manager">
+          <value/>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value/>
+        </Data>
+        <Data name="Other">
+          <value/>
+        </Data>
+        <Data name="Total">
+          <value/>
+        </Data>
+        <Data name="Opened">
+          <value/>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value/>
+        </Data>
+        <Data name="Primary Shippers">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-88.08714,41.48061,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hegewisch</name>
+      <address>13511 South Torrence Ave Hegewisch IL 60633</address>
+      <description>Hegewisch</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>31</value>
+        </Data>
+        <Data name="Address">
+          <value>13511 South Torrence Ave</value>
+        </Data>
+        <Data name="City">
+          <value>Hegewisch</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>60633</value>
+        </Data>
+        <Data name="Phone">
+          <value>773-646-0712</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Ken Switalski</value>
+        </Data>
+        <Data name="Drivers">
+          <value>44 </value>
+        </Data>
+        <Data name="Shop">
+          <value>8 </value>
+        </Data>
+        <Data name="Other">
+          <value>4 </value>
+        </Data>
+        <Data name="Total">
+          <value>56 </value>
+        </Data>
+        <Data name="Opened">
+          <value>05/11/09</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>5 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant / Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Ford, Chrysler, Glovis</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-87.55829,41.64985,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>West Chicago</name>
+      <address>Union Pacific South Automotive Facility/225 Kress West Chicago IL 60185</address>
+      <description>West Chicago</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>32</value>
+        </Data>
+        <Data name="Address">
+          <value>Union Pacific South Automotive Facility/225 Kress</value>
+        </Data>
+        <Data name="City">
+          <value>West Chicago</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>60185</value>
+        </Data>
+        <Data name="Phone">
+          <value>None</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of Aurora</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>06/25/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>GM, Nissan</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-88.23759,41.88259,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Rockdale</name>
+      <address>1217 Channahon Rd Rockdale IL 60436</address>
+      <description>Rockdate</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>33</value>
+        </Data>
+        <Data name="Address">
+          <value>1217 Channahon Rd</value>
+        </Data>
+        <Data name="City">
+          <value>Rockdale</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>60436</value>
+        </Data>
+        <Data name="Phone">
+          <value>None</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of Aurora</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>2 </value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>2 </value>
+        </Data>
+        <Data name="Opened">
+          <value>01/01/15</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>2 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Shop Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-88.1092,41.50219,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Louisville - KTP</name>
+      <address>11601 Westport Rd Louisville KY 40241</address>
+      <description>Louisville - KTP</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>41</value>
+        </Data>
+        <Data name="Address">
+          <value>11601 Westport Rd</value>
+        </Data>
+        <Data name="City">
+          <value>Louisville</value>
+        </Data>
+        <Data name="ST">
+          <value>KY</value>
+        </Data>
+        <Data name="ZIP">
+          <value>40241</value>
+        </Data>
+        <Data name="Phone">
+          <value>Cell: 502 791 1531</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Chelsea Miller</value>
+        </Data>
+        <Data name="Drivers">
+          <value>43 </value>
+        </Data>
+        <Data name="Shop">
+          <value>8 </value>
+        </Data>
+        <Data name="Other">
+          <value>2 </value>
+        </Data>
+        <Data name="Total">
+          <value>53 </value>
+        </Data>
+        <Data name="Opened">
+          <value>02/03/25</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value/>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Ford</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-85.53615,38.30253,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Louisville Office</name>
+      <address>7302 1/2 Grade Lane Louisville KY 40219</address>
+      <description>Louisvill Office</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>42</value>
+        </Data>
+        <Data name="Address">
+          <value>7302 1/2 Grade Lane</value>
+        </Data>
+        <Data name="City">
+          <value>Louisville</value>
+        </Data>
+        <Data name="ST">
+          <value>KY</value>
+        </Data>
+        <Data name="ZIP">
+          <value>40219</value>
+        </Data>
+        <Data name="Phone">
+          <value>502 363 3661</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Tim Anderson</value>
+        </Data>
+        <Data name="Drivers">
+          <value>35 </value>
+        </Data>
+        <Data name="Shop">
+          <value>6 </value>
+        </Data>
+        <Data name="Other">
+          <value>7 </value>
+        </Data>
+        <Data name="Total">
+          <value>48 </value>
+        </Data>
+        <Data name="Opened">
+          <value>12/01/17</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Dispatch Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Ford</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-85.73888,38.14413,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Louisville Office - New</name>
+      <address>6709 Grade Lane Louisville KY 40219</address>
+      <description>Louisville Office - New</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>42</value>
+        </Data>
+        <Data name="Address">
+          <value>6709 Grade Lane</value>
+        </Data>
+        <Data name="City">
+          <value>Louisville</value>
+        </Data>
+        <Data name="ST">
+          <value>KY</value>
+        </Data>
+        <Data name="ZIP">
+          <value>40219</value>
+        </Data>
+        <Data name="Phone">
+          <value>502 363 3661</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Tim Anderson</value>
+        </Data>
+        <Data name="Drivers">
+          <value/>
+        </Data>
+        <Data name="Shop">
+          <value/>
+        </Data>
+        <Data name="Other">
+          <value/>
+        </Data>
+        <Data name="Total">
+          <value/>
+        </Data>
+        <Data name="Opened">
+          <value>09/01/25</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>7 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Dispatch Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Ford</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-85.73407,38.15053,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Louisville Yard</name>
+      <address>1284 Transglobal Drive Louisville KY 40219</address>
+      <description>Louisville Yard</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>42a</value>
+        </Data>
+        <Data name="Address">
+          <value>1284 Transglobal Drive</value>
+        </Data>
+        <Data name="City">
+          <value>Louisville</value>
+        </Data>
+        <Data name="ST">
+          <value>KY</value>
+        </Data>
+        <Data name="ZIP">
+          <value>40219</value>
+        </Data>
+        <Data name="Phone">
+          <value>502 558 5900</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Tim Anderson</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>05/03/12</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Ford</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-85.71408,38.12894,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Flat Rock</name>
+      <address>22400 Vreeland Rd Woodhaven MI 48183</address>
+      <description>Flat Rock</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>43</value>
+        </Data>
+        <Data name="Address">
+          <value>22400 Vreeland Rd</value>
+        </Data>
+        <Data name="City">
+          <value>Woodhaven</value>
+        </Data>
+        <Data name="ST">
+          <value>MI</value>
+        </Data>
+        <Data name="ZIP">
+          <value>48183</value>
+        </Data>
+        <Data name="Phone">
+          <value>None</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Bob Queen</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>1 </value>
+        </Data>
+        <Data name="Total">
+          <value>1 </value>
+        </Data>
+        <Data name="Opened">
+          <value>02/15/10</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Rail Facility / Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Ford</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-83.24976,42.11083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Georgetown</name>
+      <address>166 Industry Road Georgetown KY 40324</address>
+      <description>Georgetown</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>47</value>
+        </Data>
+        <Data name="Address">
+          <value>166 Industry Road</value>
+        </Data>
+        <Data name="City">
+          <value>Georgetown</value>
+        </Data>
+        <Data name="ST">
+          <value>KY</value>
+        </Data>
+        <Data name="ZIP">
+          <value>40324</value>
+        </Data>
+        <Data name="Phone">
+          <value>502-570-4635</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Kevin Nelson</value>
+        </Data>
+        <Data name="Drivers">
+          <value>34 </value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>3 </value>
+        </Data>
+        <Data name="Total">
+          <value>37 </value>
+        </Data>
+        <Data name="Opened">
+          <value>11/15/16</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-84.5359,38.27469,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lafayette</name>
+      <address>2401 Veterans Memorial Pkwy East, Suite C Lafayette IN 47905</address>
+      <description>Lafayette</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>48</value>
+        </Data>
+        <Data name="Address">
+          <value>2401 Veterans Memorial Pkwy East, Suite C</value>
+        </Data>
+        <Data name="City">
+          <value>Lafayette</value>
+        </Data>
+        <Data name="ST">
+          <value>IN</value>
+        </Data>
+        <Data name="ZIP">
+          <value>47905</value>
+        </Data>
+        <Data name="Phone">
+          <value>765-447-0196</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Jason Jordan</value>
+        </Data>
+        <Data name="Drivers">
+          <value>26 </value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>3 </value>
+        </Data>
+        <Data name="Total">
+          <value>29 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/11/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Subaru, Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-86.81277,40.38303,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Princeton</name>
+      <address>3900 Tulip Tree Drive Princeton IN 47670</address>
+      <description>Princeton</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>49</value>
+        </Data>
+        <Data name="Address">
+          <value>3900 Tulip Tree Drive</value>
+        </Data>
+        <Data name="City">
+          <value>Princeton</value>
+        </Data>
+        <Data name="ST">
+          <value>IN</value>
+        </Data>
+        <Data name="ZIP">
+          <value>47670</value>
+        </Data>
+        <Data name="Phone">
+          <value>812-386-9002</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Tim Karcher</value>
+        </Data>
+        <Data name="Drivers">
+          <value>23 </value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>2 </value>
+        </Data>
+        <Data name="Total">
+          <value>25 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/21/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-87.56565,38.29935,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Detroit-Eldon</name>
+      <address>13475 Eldon Avenue Detroit MI 48234</address>
+      <description>Detroit-Eldon</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>50</value>
+        </Data>
+        <Data name="Address">
+          <value>13475 Eldon Avenue</value>
+        </Data>
+        <Data name="City">
+          <value>Detroit</value>
+        </Data>
+        <Data name="ST">
+          <value>MI</value>
+        </Data>
+        <Data name="ZIP">
+          <value>48234</value>
+        </Data>
+        <Data name="Phone">
+          <value>313-365-4700</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Chris Lasalle</value>
+        </Data>
+        <Data name="Drivers">
+          <value>166 </value>
+        </Data>
+        <Data name="Shop">
+          <value>34 </value>
+        </Data>
+        <Data name="Other">
+          <value>18 </value>
+        </Data>
+        <Data name="Total">
+          <value>218 </value>
+        </Data>
+        <Data name="Opened">
+          <value>05/03/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>9 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Dispatch Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-83.02719,42.41672,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Detroit-Conner</name>
+      <address>12556 Kercheval Ave Detroit MI 48214</address>
+      <description>Detroit-Conner</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>50a</value>
+        </Data>
+        <Data name="Address">
+          <value>12556 Kercheval Ave</value>
+        </Data>
+        <Data name="City">
+          <value>Detroit</value>
+        </Data>
+        <Data name="ST">
+          <value>MI</value>
+        </Data>
+        <Data name="ZIP">
+          <value>48214</value>
+        </Data>
+        <Data name="Phone">
+          <value>313-824-6126</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of Detroit</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>06/18/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Mixing Yard</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-82.96079,42.37383,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Windsor</name>
+      <address>3535 Grand Marais East Windsor ON N8W 5C1</address>
+      <description>Windsor</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>51</value>
+        </Data>
+        <Data name="Address">
+          <value>3535 Grand Marais East</value>
+        </Data>
+        <Data name="City">
+          <value>Windsor</value>
+        </Data>
+        <Data name="ST">
+          <value>ON</value>
+        </Data>
+        <Data name="ZIP">
+          <value>N8W 5C1</value>
+        </Data>
+        <Data name="Phone">
+          <value>519-944-3003</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Ken Shaban</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>4 </value>
+        </Data>
+        <Data name="Total">
+          <value>4 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/06/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant / Mixing Yard</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Chrysler, GM</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-82.97535,42.29277,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Detroit-Jefferson</name>
+      <address>2900 St. Jean Detroit MI 48214</address>
+      <description>Detroit-Jefferson</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>53</value>
+        </Data>
+        <Data name="Address">
+          <value>2900 St. Jean</value>
+        </Data>
+        <Data name="City">
+          <value>Detroit</value>
+        </Data>
+        <Data name="ST">
+          <value>MI</value>
+        </Data>
+        <Data name="ZIP">
+          <value>48214</value>
+        </Data>
+        <Data name="Phone">
+          <value>313-822-1880</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Dominic Trella</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>136 </value>
+        </Data>
+        <Data name="Total">
+          <value>136 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/13/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Chrysler</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-82.97423,42.37467,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marysville</name>
+      <address>24777 Honda Parkway Marysville OH 43040</address>
+      <description>Marysville</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>55</value>
+        </Data>
+        <Data name="Address">
+          <value>24777 Honda Parkway</value>
+        </Data>
+        <Data name="City">
+          <value>Marysville</value>
+        </Data>
+        <Data name="ST">
+          <value>OH</value>
+        </Data>
+        <Data name="ZIP">
+          <value>43040</value>
+        </Data>
+        <Data name="Phone">
+          <value>937-644-8886</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Tom Small</value>
+        </Data>
+        <Data name="Drivers">
+          <value>26 </value>
+        </Data>
+        <Data name="Shop">
+          <value>10 </value>
+        </Data>
+        <Data name="Other">
+          <value>5 </value>
+        </Data>
+        <Data name="Total">
+          <value>41 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/06/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>6 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plants</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Honda</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-83.52033,40.276151,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sterling Heights</name>
+      <address>7350 17 Mile Road Sterling Heights MI 48313</address>
+      <description>Sterling Heights</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>57</value>
+        </Data>
+        <Data name="Address">
+          <value>7350 17 Mile Road</value>
+        </Data>
+        <Data name="City">
+          <value>Sterling Heights</value>
+        </Data>
+        <Data name="ST">
+          <value>MI</value>
+        </Data>
+        <Data name="ZIP">
+          <value>48313</value>
+        </Data>
+        <Data name="Phone">
+          <value>586-795-5990</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of Detroit</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>06/14/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Chrysler</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-83.03633,42.5801,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Toledo</name>
+      <address>633 Matzinger Road Toledo OH 43612</address>
+      <description>Toledo</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>60</value>
+        </Data>
+        <Data name="Address">
+          <value>633 Matzinger Road</value>
+        </Data>
+        <Data name="City">
+          <value>Toledo</value>
+        </Data>
+        <Data name="ST">
+          <value>OH</value>
+        </Data>
+        <Data name="ZIP">
+          <value>43612</value>
+        </Data>
+        <Data name="Phone">
+          <value>419-727-0520</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Greg Foster</value>
+        </Data>
+        <Data name="Drivers">
+          <value>56 </value>
+        </Data>
+        <Data name="Shop">
+          <value>19 </value>
+        </Data>
+        <Data name="Other">
+          <value>66 </value>
+        </Data>
+        <Data name="Total">
+          <value>141 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/12/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>7 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Dispatch Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-83.53062,41.70639,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>London</name>
+      <address>1237 Green Valley Road London ON N6N 1E4</address>
+      <description>London</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>64</value>
+        </Data>
+        <Data name="Address">
+          <value>1237 Green Valley Road</value>
+        </Data>
+        <Data name="City">
+          <value>London</value>
+        </Data>
+        <Data name="ST">
+          <value>ON</value>
+        </Data>
+        <Data name="ZIP">
+          <value>N6N 1E4</value>
+        </Data>
+        <Data name="Phone">
+          <value>519-690-2603</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Bill Stevenson</value>
+        </Data>
+        <Data name="Drivers">
+          <value>95 </value>
+        </Data>
+        <Data name="Shop">
+          <value>9 </value>
+        </Data>
+        <Data name="Other">
+          <value>13 </value>
+        </Data>
+        <Data name="Total">
+          <value>117 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/26/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>6 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Dispatch Office</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-81.18172,42.92241,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Warren Rail</name>
+      <address>8290 Tod Avenue SW Warren OH 44481</address>
+      <description>Warren Rail</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>69</value>
+        </Data>
+        <Data name="Address">
+          <value>8290 Tod Avenue SW</value>
+        </Data>
+        <Data name="City">
+          <value>Warren</value>
+        </Data>
+        <Data name="ST">
+          <value>OH</value>
+        </Data>
+        <Data name="ZIP">
+          <value>44481</value>
+        </Data>
+        <Data name="Phone">
+          <value>330-824-2107</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: John Elliott</value>
+        </Data>
+        <Data name="Drivers">
+          <value>70 </value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>4 </value>
+        </Data>
+        <Data name="Total">
+          <value>74 </value>
+        </Data>
+        <Data name="Opened">
+          <value>09/29/17</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant / Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>GM, Chrysler, Ford</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-80.85875,41.14292,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Warren Shop</name>
+      <address>1757 Hallock-Young SW Road Bld 3-2 Warren OH 44481</address>
+      <description>Warren Shop</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>69a</value>
+        </Data>
+        <Data name="Address">
+          <value>1757 Hallock-Young SW Road Bld 3-2</value>
+        </Data>
+        <Data name="City">
+          <value>Warren</value>
+        </Data>
+        <Data name="ST">
+          <value>OH</value>
+        </Data>
+        <Data name="ZIP">
+          <value>44481</value>
+        </Data>
+        <Data name="Phone">
+          <value>330-824-0017</value>
+        </Data>
+        <Data name="Manager">
+          <value>Shop Mgr: Dan Clark</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>14 </value>
+        </Data>
+        <Data name="Other">
+          <value>2 </value>
+        </Data>
+        <Data name="Total">
+          <value>16 </value>
+        </Data>
+        <Data name="Opened">
+          <value>07/02/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>6 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Shop Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-80.86365,41.15215,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Niagara</name>
+      <address>4749 Witmer Road Niagara Falls NY 14305</address>
+      <description>Niagara</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>73</value>
+        </Data>
+        <Data name="Address">
+          <value>4749 Witmer Road</value>
+        </Data>
+        <Data name="City">
+          <value>Niagara Falls</value>
+        </Data>
+        <Data name="ST">
+          <value>NY</value>
+        </Data>
+        <Data name="ZIP">
+          <value>14305</value>
+        </Data>
+        <Data name="Phone">
+          <value>716-285-0701</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Jimmy Norton</value>
+        </Data>
+        <Data name="Drivers">
+          <value>65 </value>
+        </Data>
+        <Data name="Shop">
+          <value>15 </value>
+        </Data>
+        <Data name="Other">
+          <value>8 </value>
+        </Data>
+        <Data name="Total">
+          <value>88 </value>
+        </Data>
+        <Data name="Opened">
+          <value>07/29/08</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>6 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Mixing Center</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>GM, Chrysler, Ford, Nissan, Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-79.02391,43.12712,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Annapolis</name>
+      <address>8575 Dorsey Run Road Jessup MD 20794</address>
+      <description>Annapolis</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>74</value>
+        </Data>
+        <Data name="Address">
+          <value>8575 Dorsey Run Road</value>
+        </Data>
+        <Data name="City">
+          <value>Jessup</value>
+        </Data>
+        <Data name="ST">
+          <value>MD</value>
+        </Data>
+        <Data name="ZIP">
+          <value>20794</value>
+        </Data>
+        <Data name="Phone">
+          <value>301-317-6045</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Juan Perez</value>
+        </Data>
+        <Data name="Drivers">
+          <value>24 </value>
+        </Data>
+        <Data name="Shop">
+          <value>5 </value>
+        </Data>
+        <Data name="Other">
+          <value>5 </value>
+        </Data>
+        <Data name="Total">
+          <value>34 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/26/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>5 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>GM, Chrysler, Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-76.78807,39.13041,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Philadelphia</name>
+      <address>895 Kitty Hawk Ave Philadelphia PA 19112</address>
+      <description>Philadelphia</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>76</value>
+        </Data>
+        <Data name="Address">
+          <value>895 Kitty Hawk Ave</value>
+        </Data>
+        <Data name="City">
+          <value>Philadelphia</value>
+        </Data>
+        <Data name="ST">
+          <value>PA</value>
+        </Data>
+        <Data name="ZIP">
+          <value>19112</value>
+        </Data>
+        <Data name="Phone">
+          <value>215-952-6900</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Brad Rolfe</value>
+        </Data>
+        <Data name="Drivers">
+          <value>16 </value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>2 </value>
+        </Data>
+        <Data name="Total">
+          <value>18 </value>
+        </Data>
+        <Data name="Opened">
+          <value>11/01/19</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Port Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Hyundai, Kia</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-75.1649,39.89177,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Newark</name>
+      <address>56 Frontage Road Newark NJ 7114</address>
+      <description>Newark</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>79</value>
+        </Data>
+        <Data name="Address">
+          <value>56 Frontage Road</value>
+        </Data>
+        <Data name="City">
+          <value>Newark</value>
+        </Data>
+        <Data name="ST">
+          <value>NJ</value>
+        </Data>
+        <Data name="ZIP">
+          <value>7114</value>
+        </Data>
+        <Data name="Phone">
+          <value>973-344-4620</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Luis Pino</value>
+        </Data>
+        <Data name="Drivers">
+          <value>47 </value>
+        </Data>
+        <Data name="Shop">
+          <value>2 </value>
+        </Data>
+        <Data name="Other">
+          <value>4 </value>
+        </Data>
+        <Data name="Total">
+          <value>53 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/24/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Port Facility / Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Toyota, GM</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-74.15684,40.71157,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Elwood</name>
+      <address>Logistics Park Chicago/27141 S Industrial Dr Elwood IL 60421</address>
+      <description>Elwood</description>
+
+      <ExtendedData>
+        <Data name="Term">
+          <value>80</value>
+        </Data>
+        <Data name="Address">
+          <value>Logistics Park Chicago/27141 S Industrial Dr</value>
+        </Data>
+        <Data name="City">
+          <value>Elwood</value>
+        </Data>
+        <Data name="ST">
+          <value>IL</value>
+        </Data>
+        <Data name="ZIP">
+          <value>60421</value>
+        </Data>
+        <Data name="Phone">
+          <value>None</value>
+        </Data>
+        <Data name="Manager">
+          <value>Managed out of Aurora</value>
+        </Data>
+        <Data name="Drivers">
+          <value>0</value>
+        </Data>
+        <Data name="Shop">
+          <value>0</value>
+        </Data>
+        <Data name="Other">
+          <value>0</value>
+        </Data>
+        <Data name="Total">
+          <value>0</value>
+        </Data>
+        <Data name="Opened">
+          <value>06/24/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value/>
+        </Data>
+        <Data name="Facility Type">
+          <value>Inbound Rail Facility</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Honda, Hyundai, Kia, Mitsubishi, Subaru, Toyota</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-88.14576,41.39868,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Smyrna</name>
+      <address>631 Enon Springs Road East Smyrna TN 37167</address>
+      <description>Smyrna</description>
+      <ExtendedData>
+        <Data name="Term">
+          <value>95</value>
+        </Data>
+        <Data name="Address">
+          <value>631 Enon Springs Road East</value>
+        </Data>
+        <Data name="City">
+          <value>Smyrna</value>
+        </Data>
+        <Data name="ST">
+          <value>TN</value>
+        </Data>
+        <Data name="ZIP">
+          <value>37167</value>
+        </Data>
+        <Data name="Phone">
+          <value>615-459-7393</value>
+        </Data>
+        <Data name="Manager">
+          <value>Manager: Wendy Ryan</value>
+        </Data>
+        <Data name="Drivers">
+          <value>8 </value>
+        </Data>
+        <Data name="Shop">
+          <value>4 </value>
+        </Data>
+        <Data name="Other">
+          <value>2 </value>
+        </Data>
+        <Data name="Total">
+          <value>14 </value>
+        </Data>
+        <Data name="Opened">
+          <value>06/08/05</value>
+        </Data>
+        <Data name="Shop Bays">
+          <value>6 Bay Full Service Repair Facility</value>
+        </Data>
+        <Data name="Facility Type">
+          <value>Assembly Plant</value>
+        </Data>
+        <Data name="Primary Shippers">
+          <value>Nissan</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-86.48575,35.97361,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

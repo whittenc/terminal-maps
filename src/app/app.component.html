@@ -1,0 +1,179 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="sidenavOpened" class="sidenav">
+    <mat-tab-group>
+      <mat-tab label="Terminals">
+        <div class="terminal-tab-content">
+          <div class="terminal-header">
+            <mat-form-field appearance="outline" class="terminal-filter">
+              <mat-label>Filter by Terminal</mat-label>
+              <mat-select
+                [value]="selectedTerminal"
+                (selectionChange)="onTerminalFilterChange($event.value)"
+              >
+                <mat-option [value]="null" (click)="clearSelection()">
+                  <mat-icon>clear_all</mat-icon>
+                  Show All Terminals
+                </mat-option>
+                <mat-option
+                  *ngFor="let terminal of terminals"
+                  [value]="terminal.terminalNumber"
+                >
+                  <mat-icon>business</mat-icon>
+                  {{ terminal.terminalNumber }} - {{ terminal.name }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <mat-divider></mat-divider>
+
+          <div class="terminal-list-container">
+            <div class="terminal-card" *ngFor="let terminal of terminals" [class.active]="selectedTerminal === terminal.terminalNumber">
+              <!-- Terminal Header -->
+              <div class="terminal-header-row" (click)="onTerminalClick(terminal)">
+                <div class="terminal-info">
+                  <div class="terminal-title">
+                    <mat-icon class="terminal-icon">business</mat-icon>
+                    <span class="terminal-name">{{ terminal.name }}-{{terminal.terminalNumber}}</span>
+                    </div>
+                  <div class="terminal-location">
+                    <mat-icon class="location-icon">place</mat-icon>
+                    {{ terminal.city }}, {{ terminal.state }}
+                  </div>
+                </div>
+                <button mat-icon-button class="info-button" (click)="showTerminalDetails(terminal, $event)">
+                  <mat-icon>info_outline</mat-icon>
+                </button>
+              </div>
+
+              <!-- Terminal Stats -->
+              <div class="terminal-stats-row">
+                <div class="stat-card">
+                  <div class="stat-content">
+                    <span class="stat-value">{{ getShippingCountByTerminal(terminal.terminalNumber) }}</span>
+                    <span class="stat-label">Shipments</span>
+                  </div>
+                </div>
+                <div class="stat-card destinations-toggle"
+                     *ngIf="getShippingCitiesByTerminal(terminal.terminalNumber).length > 0"
+                     (click)="toggleShippingDestinations(terminal, $event)">
+                  <mat-icon [class.expanded]="isShippingExpanded(terminal.terminalNumber)">expand_more</mat-icon>
+                  <div class="stat-content">
+                    <span class="stat-value">{{ getShippingCitiesByTerminal(terminal.terminalNumber).length }}</span>
+                    <span class="stat-label">Destinations</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Expanded Destinations -->
+              <div class="destinations-section"
+                   *ngIf="isShippingExpanded(terminal.terminalNumber)"
+                   [@slideInOut]>
+                <div class="destinations-grid">
+                  <div class="destination-card" *ngFor="let city of getShippingCitiesByTerminal(terminal.terminalNumber)">
+                    <div class="destination-info">
+                      <span class="destination-city">{{ city.city }}</span>
+                      <span class="destination-state">{{ city.state }}</span>
+                    </div>
+                    <div class="destination-count">{{ city.count }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        (click)="sidenav.toggle()"
+        class="menu-button"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>{{ title }}</span>
+      <span class="toolbar-spacer"></span>
+      <div class="summary-display">
+        <mat-icon>analytics</mat-icon>
+        <span class="summary-text">
+          {{ terminals.length }} Terminals • {{ getTotalShipments() }} Shipments
+        </span>
+      </div>
+      <button mat-icon-button (click)="toggleLayerControls()" title="Toggle Layers">
+        <mat-icon>layers</mat-icon>
+      </button>
+      <button mat-button (click)="centerOnTerminals()">
+        <mat-icon>my_location</mat-icon> Center on Terminals
+      </button>
+      <button mat-button (click)="centerOnShipping()">
+        <mat-icon>local_shipping</mat-icon> Center on Shipping
+      </button>
+    </mat-toolbar>
+
+    <div class="map-container">
+      <div *ngIf="isLoading" class="spinner-overlay">
+        <mat-spinner></mat-spinner>
+      </div>
+      <google-map
+        *ngIf="!isLoading"
+        height="100%"
+        width="100%"
+        [zoom]="zoom"
+        [center]="center"
+        [options]="mapOptions"
+      >
+        <!-- Terminals -->
+        <map-marker
+          *ngFor="let terminal of getVisibleTerminals()"
+          [position]="terminal.position"
+          [options]="getTerminalMarkerOptions(terminal)"
+          [title]="getTerminalTitle(terminal)"
+          (mapClick)="onTerminalClick(terminal)"
+        ></map-marker>
+
+        <!-- Shipping Locations -->
+        <map-marker
+          *ngFor="let location of getVisibleShippingLocations()"
+          [position]="location.position"
+          [options]="getShippingMarkerOptions(location)"
+          (mapClick)="onShippingLocationClick(location)"
+        ></map-marker>
+      </google-map>
+
+      <div id="legend" *ngIf="isShippingLayerVisible()">
+        <p><b>Unit Count</b></p>
+        <div class="legend-item"><div class="color-box step1"></div> 1 - 5</div>
+        <div class="legend-item"><div class="color-box step2"></div> 6 - 10</div>
+        <div class="legend-item"><div class="color-box step3"></div> 11 - 15</div>
+        <div class="legend-item"><div class="color-box step4"></div> 16 - 20</div>
+        <div class="legend-item"><div class="color-box step5"></div> 21 - 25</div>
+        <div class="legend-item"><div class="color-box step6"></div> 26 - 30</div>
+        <div class="legend-item"><div class="color-box step7"></div> 31 - 35</div>
+        <div class="legend-item"><div class="color-box step8"></div> 36 - 40</div>
+        <div class="legend-item"><div class="color-box step9"></div> 41 - 45</div>
+        <div class="legend-item"><div class="color-box step10"></div> &gt; 45</div>
+      </div>
+
+      <div id="layer-controls" *ngIf="layerControlsVisible">
+        <p><b>Map Layers</b></p>
+        <div class="layer-item" *ngFor="let layer of layers">
+          <mat-checkbox
+            [checked]="layer.visible"
+            (change)="toggleLayer(layer)"
+            [color]="layer.id === 'terminals' ? 'accent' : 'primary'"
+            class="layer-checkbox"
+          >
+            <div class="layer-info">
+              <mat-icon [style.color]="layer.color" class="layer-icon">{{ layer.icon }}</mat-icon>
+              <span class="layer-name">{{ layer.name }}</span>
+            </div>
+          </mat-checkbox>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
