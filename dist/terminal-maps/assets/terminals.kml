@@ -279,64 +279,9 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>Aurora</name>
-      <address>3401 Liberty Street Aurora IL 60502</address>
-      <description>Aurora</description>
-      <ExtendedData>
-        <Data name="Term">
-          <value>30</value>
-        </Data>
-        <Data name="Address">
-          <value>3401 Liberty Street</value>
-        </Data>
-        <Data name="City">
-          <value>Aurora</value>
-        </Data>
-        <Data name="ST">
-          <value>IL</value>
-        </Data>
-        <Data name="ZIP">
-          <value>60502</value>
-        </Data>
-        <Data name="Phone">
-          <value>630-820-1600</value>
-        </Data>
-        <Data name="Manager">
-          <value>Manager: Ken Bowlby</value>
-        </Data>
-        <Data name="Drivers">
-          <value>100 </value>
-        </Data>
-        <Data name="Shop">
-          <value>17 </value>
-        </Data>
-        <Data name="Other">
-          <value>9 </value>
-        </Data>
-        <Data name="Total">
-          <value>126 </value>
-        </Data>
-        <Data name="Opened">
-          <value>06/04/05</value>
-        </Data>
-        <Data name="Shop Bays">
-          <value>6 Bay Full Service Repair Facility</value>
-        </Data>
-        <Data name="Facility Type">
-          <value>Dispatch Office</value>
-        </Data>
-        <Data name="Primary Shippers">
-          <value>0</value>
-        </Data>
-      </ExtendedData>
-      <Point>
-        <coordinates>-88.2384,41.76645,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Aurora - New</name>
+      <name>Joliet</name>
       <address>270 West Laraway Rd Joliet IL 60436</address>
-      <description>Aurora - New</description>
+      <description>Joliet</description>
       <ExtendedData>
         <Data name="Term">
           <value>30</value>
@@ -468,7 +413,7 @@
           <value>None</value>
         </Data>
         <Data name="Manager">
-          <value>Managed out of Aurora</value>
+          <value>Managed out of Joliet</value>
         </Data>
         <Data name="Drivers">
           <value>0</value>
@@ -524,7 +469,7 @@
           <value>None</value>
         </Data>
         <Data name="Manager">
-          <value>Managed out of Aurora</value>
+          <value>Managed out of Joliet</value>
         </Data>
         <Data name="Drivers">
           <value>0</value>
@@ -1284,62 +1229,6 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>Sterling Heights</name>
-      <address>7350 17 Mile Road Sterling Heights MI 48313</address>
-      <description>Sterling Heights</description>
-
-      <ExtendedData>
-        <Data name="Term">
-          <value>57</value>
-        </Data>
-        <Data name="Address">
-          <value>7350 17 Mile Road</value>
-        </Data>
-        <Data name="City">
-          <value>Sterling Heights</value>
-        </Data>
-        <Data name="ST">
-          <value>MI</value>
-        </Data>
-        <Data name="ZIP">
-          <value>48313</value>
-        </Data>
-        <Data name="Phone">
-          <value>586-795-5990</value>
-        </Data>
-        <Data name="Manager">
-          <value>Managed out of Detroit</value>
-        </Data>
-        <Data name="Drivers">
-          <value>0</value>
-        </Data>
-        <Data name="Shop">
-          <value>0</value>
-        </Data>
-        <Data name="Other">
-          <value>0</value>
-        </Data>
-        <Data name="Total">
-          <value>0</value>
-        </Data>
-        <Data name="Opened">
-          <value>06/14/05</value>
-        </Data>
-        <Data name="Shop Bays">
-          <value/>
-        </Data>
-        <Data name="Facility Type">
-          <value>Rail Facility</value>
-        </Data>
-        <Data name="Primary Shippers">
-          <value>Chrysler</value>
-        </Data>
-      </ExtendedData>
-      <Point>
-        <coordinates>-83.03633,42.5801,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
       <name>Toledo</name>
       <address>633 Matzinger Road Toledo OH 43612</address>
       <description>Toledo</description>
@@ -1812,7 +1701,7 @@
           <value>None</value>
         </Data>
         <Data name="Manager">
-          <value>Managed out of Aurora</value>
+          <value>Managed out of Joliet</value>
         </Data>
         <Data name="Drivers">
           <value>0</value>

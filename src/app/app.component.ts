@@ -156,7 +156,7 @@ export class AppComponent implements OnInit {
       // Load both terminals and shipping data from static KML files
       const [terminalsResponse, shippingResponse] = await Promise.all([
         this.http.get('/assets/terminals.kml', { responseType: 'text' }).toPromise(),
-        this.http.get('/assets/shipping.kml', { responseType: 'text' }).toPromise()
+        this.http.get('/assets/shipping_20251010131328.kml', { responseType: 'text' }).toPromise()
       ]);
 
       // Parse terminals KML
@@ -348,7 +348,7 @@ export class AppComponent implements OnInit {
   showShippingInfo(location: ShippingLocation) {
     const message = `${location.city}, ${location.state}
     From: ${location.terminalSource}
-    Shipments: ${location.count}`;
+    Units: ${location.count}`;
 
     this.snackBar.open(message, 'Close', {
       duration: 5000,
@@ -664,7 +664,7 @@ export class AppComponent implements OnInit {
     }
     return this.terminals.reduce((sum, t) => sum + t.total, 0);
   }
-  getTotalShipments(): number {
+  getTotalUnits(): number {
     if (!this.shippingLocations || this.shippingLocations.length === 0) {
       return 0;
     }
@@ -887,7 +887,7 @@ export class TerminalDetailsDialogComponent {
     this.dialogRef.close('center');
   }
 
-  getTotalShipments(): number {
+  getTotalUnits(): number {
     return this.data.cityData.reduce((sum: number, city: any) => sum + city.count, 0);
   }
 }

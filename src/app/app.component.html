@@ -51,7 +51,7 @@
                 <div class="stat-card">
                   <div class="stat-content">
                     <span class="stat-value">{{ getShippingCountByTerminal(terminal.terminalNumber) }}</span>
-                    <span class="stat-label">Shipments</span>
+                    <span class="stat-label">Units</span>
                   </div>
                 </div>
                 <div class="stat-card destinations-toggle"
@@ -100,7 +100,7 @@
       <div class="summary-display">
         <mat-icon>analytics</mat-icon>
         <span class="summary-text">
-          {{ terminals.length }} Terminals • {{ getTotalShipments() }} Shipments
+          {{ terminals.length }} Terminals • {{ getTotalUnits() }} Units
         </span>
       </div>
       <button mat-icon-button (click)="toggleLayerControls()" title="Toggle Layers">
