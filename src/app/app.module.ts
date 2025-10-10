@@ -27,10 +27,28 @@ import { MatExpansionModule } from '@angular/material/expansion';
 // Google Maps
 import { GoogleMapsModule } from '@angular/google-maps';
 
+// Services
+import { TerminalService } from './services/terminal.service';
+import { KmlParserService } from './services/kml-parser.service';
+import { MapStateService } from './services/map-state.service';
+import { GoogleMapsLoaderService } from './services/google-maps-loader.service';
+
+// Components
 import { AppComponent, TerminalDetailsDialogComponent } from './app.component';
+import { MapComponent } from './components/map/map.component';
+import { LayerControlComponent } from './components/layer-control/layer-control.component';
+import { TerminalFilterComponent } from './components/terminal-filter/terminal-filter.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [AppComponent, TerminalDetailsDialogComponent],
+  declarations: [
+    AppComponent,
+    TerminalDetailsDialogComponent,
+    MapComponent,
+    LayerControlComponent,
+    TerminalFilterComponent,
+    SidebarComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -61,7 +79,12 @@ import { AppComponent, TerminalDetailsDialogComponent } from './app.component';
     // Google Maps
     GoogleMapsModule,
   ],
-  providers: [],
+  providers: [
+    TerminalService,
+    KmlParserService,
+    MapStateService,
+    GoogleMapsLoaderService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

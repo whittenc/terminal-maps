@@ -1,0 +1,21 @@
+<div class="terminal-filter-container">
+  <mat-form-field appearance="outline" class="terminal-filter">
+    <mat-label>Filter by Terminal</mat-label>
+    <mat-select
+      [value]="selectedTerminal"
+      (selectionChange)="onSelectionChange($event.value)"
+    >
+      <mat-option [value]="null" (click)="clearSelection()">
+        <mat-icon>clear_all</mat-icon>
+        Show All Terminals
+      </mat-option>
+      <mat-option
+        *ngFor="let terminal of terminals"
+        [value]="terminal.terminalNumber"
+      >
+        <mat-icon>business</mat-icon>
+        {{ terminal.terminalNumber }} - {{ terminal.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

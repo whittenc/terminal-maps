@@ -558,64 +558,8 @@
     </Placemark>
     <Placemark>
       <name>Louisville Office</name>
-      <address>7302 1/2 Grade Lane Louisville KY 40219</address>
-      <description>Louisvill Office</description>
-
-      <ExtendedData>
-        <Data name="Term">
-          <value>42</value>
-        </Data>
-        <Data name="Address">
-          <value>7302 1/2 Grade Lane</value>
-        </Data>
-        <Data name="City">
-          <value>Louisville</value>
-        </Data>
-        <Data name="ST">
-          <value>KY</value>
-        </Data>
-        <Data name="ZIP">
-          <value>40219</value>
-        </Data>
-        <Data name="Phone">
-          <value>502 363 3661</value>
-        </Data>
-        <Data name="Manager">
-          <value>Manager: Tim Anderson</value>
-        </Data>
-        <Data name="Drivers">
-          <value>35 </value>
-        </Data>
-        <Data name="Shop">
-          <value>6 </value>
-        </Data>
-        <Data name="Other">
-          <value>7 </value>
-        </Data>
-        <Data name="Total">
-          <value>48 </value>
-        </Data>
-        <Data name="Opened">
-          <value>12/01/17</value>
-        </Data>
-        <Data name="Shop Bays">
-          <value/>
-        </Data>
-        <Data name="Facility Type">
-          <value>Dispatch Office</value>
-        </Data>
-        <Data name="Primary Shippers">
-          <value>Ford</value>
-        </Data>
-      </ExtendedData>
-      <Point>
-        <coordinates>-85.73888,38.14413,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Louisville Office - New</name>
       <address>6709 Grade Lane Louisville KY 40219</address>
-      <description>Louisville Office - New</description>
+      <description>Louisville Office</description>
 
       <ExtendedData>
         <Data name="Term">

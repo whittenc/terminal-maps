@@ -46,30 +46,17 @@ ng add @angular/material
 
 ### 4. Google Maps API Setup
 
-1. Get a Google Maps JavaScript API key from [Google Cloud Console](https://console.cloud.google.com/)
-2. Enable the following APIs:
-   - Maps JavaScript API
-   - Places API (optional, for address autocomplete)
+**See [ENVIRONMENT_SETUP.md](ENVIRONMENT_SETUP.md) for detailed configuration instructions.**
 
-3. Add the API key to your `src/index.html`:
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Terminal Maps</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>
-</head>
-<body class="mat-typography">
-  <app-root></app-root>
-</body>
-</html>
+Quick setup:
+1. Get a Google Maps API key from [Google Cloud Console](https://console.cloud.google.com/)
+2. Enable the Maps JavaScript API
+3. Add your API key to `src/environments/environment.ts`:
+```typescript
+export const environment = {
+  production: false,
+  googleMapsApiKey: 'YOUR_API_KEY_HERE'
+};
 ```
 
 ### 5. File Structure
@@ -215,25 +202,32 @@ interface ShippingLocation {
 
 ### Development
 ```bash
-ng serve --host 0.0.0.0 --port 4200
+ng serve
+# App runs on http://localhost:4200
 ```
 
-### Production
+### Production Build
 ```bash
-ng build --prod
-# Deploy the dist/ folder to your web server
+ng build
+# Creates production files in dist/terminal-maps/
 ```
 
-### Environment Variables
-For production deployment, consider using environment files for API keys:
+### Netlify Deployment
 
-```typescript
-// src/environments/environment.prod.ts
-export const environment = {
-  production: true,
-  googleMapsApiKey: 'YOUR_PRODUCTION_API_KEY'
-};
-```
+**See [NETLIFY_SETUP.md](NETLIFY_SETUP.md) for complete deployment guide.**
+
+Quick steps:
+1. Set `GOOGLE_MAPS_API_KEY` environment variable in Netlify
+2. Push to GitHub
+3. Netlify auto-deploys with the configured `netlify.toml`
+
+### Environment Configuration
+
+**See [ENVIRONMENT_SETUP.md](ENVIRONMENT_SETUP.md) for detailed environment setup.**
+
+The application uses environment files for configuration:
+- Development: `src/environments/environment.ts`
+- Production: `src/environments/environment.prod.ts` (auto-configured by Netlify)
 
 ## Troubleshooting
 

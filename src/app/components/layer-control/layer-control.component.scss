@@ -1,0 +1,40 @@
+#layer-controls {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  min-width: 200px;
+
+  p {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+  }
+
+  .layer-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .layer-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .layer-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .layer-name {
+    font-size: 14px;
+  }
+}

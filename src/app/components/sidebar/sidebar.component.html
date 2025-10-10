@@ -1,0 +1,68 @@
+<mat-tab-group>
+  <mat-tab label="Terminals">
+    <div class="terminal-tab-content">
+      <app-terminal-filter
+        [terminals]="terminals"
+        [selectedTerminal]="selectedTerminal"
+        (selectionChanged)="onFilterChange($event)"
+      ></app-terminal-filter>
+
+      <mat-divider></mat-divider>
+
+      <div class="terminal-list-container">
+        <div class="terminal-card" *ngFor="let terminal of terminals" [class.active]="selectedTerminal === terminal.terminalNumber">
+          <!-- Terminal Header -->
+          <div class="terminal-header-row" (click)="onTerminalClick(terminal)">
+            <div class="terminal-info">
+              <div class="terminal-title">
+                <mat-icon class="terminal-icon">business</mat-icon>
+                <span class="terminal-name">{{ terminal.name }}-{{terminal.terminalNumber}}</span>
+              </div>
+              <div class="terminal-location">
+                <mat-icon class="location-icon">place</mat-icon>
+                {{ terminal.city }}, {{ terminal.state }}
+              </div>
+            </div>
+            <button mat-icon-button class="info-button" (click)="onShowDetails(terminal, $event)">
+              <mat-icon>info_outline</mat-icon>
+            </button>
+          </div>
+
+          <!-- Terminal Stats -->
+          <div class="terminal-stats-row" *ngIf="getShippingCountByTerminal(terminal.terminalNumber) > 0">
+            <div class="stat-card">
+              <div class="stat-content">
+                <span class="stat-value">{{ getShippingCountByTerminal(terminal.terminalNumber) }}</span>
+                <span class="stat-label">Units</span>
+              </div>
+            </div>
+            <div class="stat-card destinations-toggle"
+                 *ngIf="getShippingCitiesByTerminal(terminal.terminalNumber).length > 0"
+                 (click)="onToggleShipping(terminal, $event)">
+              <mat-icon [class.expanded]="isShippingExpanded(terminal.terminalNumber)">expand_more</mat-icon>
+              <div class="stat-content">
+                <span class="stat-value">{{ getShippingCitiesByTerminal(terminal.terminalNumber).length }}</span>
+                <span class="stat-label">Destinations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expanded Destinations -->
+          <div class="destinations-section"
+               *ngIf="isShippingExpanded(terminal.terminalNumber)"
+               [@slideInOut]>
+            <div class="destinations-grid">
+              <div class="destination-card" *ngFor="let city of getShippingCitiesByTerminal(terminal.terminalNumber)">
+                <div class="destination-info">
+                  <span class="destination-city">{{ city.city }}</span>
+                  <span class="destination-state">{{ city.state }}</span>
+                </div>
+                <div class="destination-count">{{ city.count }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

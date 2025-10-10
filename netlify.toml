@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "node scripts/set-env.js && npm run build"
   publish = "dist/terminal-maps"
 
 [[redirects]]
