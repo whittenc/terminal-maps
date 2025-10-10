@@ -5,6 +5,7 @@ A modern Angular Material application for tracking terminal locations and daily 
 ## Features
 
 - **Interactive Google Maps** with custom markers
+- **Location Search & Autocomplete** - Search for any location with smart suggestions
 - **Layer Management** - Toggle terminals and shipping destinations
 - **Terminal Filtering** - Filter shipping locations by terminal
 - **Responsive Design** with Material Design UI
