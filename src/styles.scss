@@ -1,5 +1,53 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
+// CSS Custom Properties for theming and consistency
+:root {
+  // Brand Colors
+  --primary-color: #3f51b5;
+  --primary-light: #f5f7ff;
+  --accent-color: #1976d2;
+  --terminal-color: #c2185b;
+  --shipping-color: #1a237e;
+
+  // Neutral Colors
+  --text-primary: rgba(0, 0, 0, 0.9);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --text-disabled: rgba(0, 0, 0, 0.4);
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-overlay: rgba(255, 255, 255, 0.9);
+  --border-color: #e0e0e0;
+
+  // Spacing
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+
+  // Border Radius
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  // Shadows
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+  // Legend Colors
+  --legend-step1: #2196F3;
+  --legend-step2: #00BCD4;
+  --legend-step3: #4CAF50;
+  --legend-step4: #8BC34A;
+  --legend-step5: #CDDC39;
+  --legend-step6: #FFEB3B;
+  --legend-step7: #FFC107;
+  --legend-step8: #FF9800;
+  --legend-step9: #FF5722;
+  --legend-step10: #F44336;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -12,13 +60,13 @@ body {
 
 // Custom snackbar styles
 .terminal-snackbar {
-  background-color: #c2185b !important;
-  color: white !important;
+  background-color: var(--terminal-color);
+  color: var(--bg-primary);
 }
 
 .shipping-snackbar {
-  background-color: #1a237e !important;
-  color: white !important;
+  background-color: var(--shipping-color);
+  color: var(--bg-primary);
 }
 
 // Fix for Angular Material chip styling
@@ -28,6 +76,6 @@ body {
 
 // Google Maps container
 google-map {
-  height: 100% !important;
-  width: 100% !important;
+  height: 100%;
+  width: 100%;
 }

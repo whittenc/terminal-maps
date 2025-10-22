@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Inject } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
@@ -31,7 +31,8 @@ import { LayerControlComponent } from './components/layer-control/layer-control.
     LayerControlComponent
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
   @ViewChild(MapComponent) mapComponent!: MapComponent;
@@ -61,7 +62,8 @@ export class AppComponent implements OnInit {
     private terminalService: TerminalService,
     private mapStateService: MapStateService,
     private kmlParser: KmlParserService,
-    private googleMapsLoader: GoogleMapsLoaderService
+    private googleMapsLoader: GoogleMapsLoaderService,
+    private cdr: ChangeDetectorRef
   ) {}
 
   async ngOnInit() {
@@ -81,14 +83,17 @@ export class AppComponent implements OnInit {
     // Subscribe to services
     this.terminalService.terminals$.subscribe(terminals => {
       this.terminals = terminals;
+      this.cdr.markForCheck();
     });
 
     this.terminalService.shippingLocations$.subscribe(locations => {
       this.shippingLocations = locations;
+      this.cdr.markForCheck();
     });
 
     this.mapStateService.layers$.subscribe(layers => {
       this.layers = layers;
+      this.cdr.markForCheck();
     });
 
     this.mapStateService.selectedTerminal$.subscribe(selected => {
@@ -96,10 +101,12 @@ export class AppComponent implements OnInit {
       if (this.mapComponent) {
         this.mapComponent.clearMarkerCache();
       }
+      this.cdr.markForCheck();
     });
 
     await this.loadSampleData();
     this.isLoading = false;
+    this.cdr.markForCheck();
   }
 
   async loadSampleData() {

@@ -6,38 +6,35 @@
 
 .spinner-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--bg-overlay);
   z-index: 1000;
 }
 
 #legend {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: white;
-  padding: 12px 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  bottom: var(--spacing-xl);
+  left: var(--spacing-xl);
+  background: var(--bg-primary);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
   z-index: 1000;
   font-size: 12px;
 
   p {
-    margin: 0 0 8px 0;
+    margin: 0 0 var(--spacing-sm) 0;
     font-size: 13px;
   }
 
   .legend-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 
     &:last-child {
       margin-bottom: 0;
@@ -48,17 +45,17 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 
-    &.step1 { background-color: #2196F3; }
-    &.step2 { background-color: #00BCD4; }
-    &.step3 { background-color: #4CAF50; }
-    &.step4 { background-color: #8BC34A; }
-    &.step5 { background-color: #CDDC39; }
-    &.step6 { background-color: #FFEB3B; }
-    &.step7 { background-color: #FFC107; }
-    &.step8 { background-color: #FF9800; }
-    &.step9 { background-color: #FF5722; }
-    &.step10 { background-color: #F44336; }
+    &.step1 { background-color: var(--legend-step1); }
+    &.step2 { background-color: var(--legend-step2); }
+    &.step3 { background-color: var(--legend-step3); }
+    &.step4 { background-color: var(--legend-step4); }
+    &.step5 { background-color: var(--legend-step5); }
+    &.step6 { background-color: var(--legend-step6); }
+    &.step7 { background-color: var(--legend-step7); }
+    &.step8 { background-color: var(--legend-step8); }
+    &.step9 { background-color: var(--legend-step9); }
+    &.step10 { background-color: var(--legend-step10); }
   }
 }

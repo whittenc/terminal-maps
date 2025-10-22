@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
@@ -15,7 +15,8 @@ import { Terminal } from '../../services/terminal.service';
     MatIconModule
   ],
   templateUrl: './terminal-filter.component.html',
-  styleUrls: ['./terminal-filter.component.scss']
+  styleUrls: ['./terminal-filter.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TerminalFilterComponent {
   @Input() terminals: Terminal[] = [];
