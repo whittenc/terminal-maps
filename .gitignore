@@ -30,3 +30,11 @@ npm-debug.log*
 # Testing
 coverage
 .nyc_output
+IMPROVEMENT_RECOMMENDATIONS.md
+ENVIRONMENT_MIGRATION_SUMMARY.md
+ENVIRONMENT_SETUP.md
+.gitignore
+dist/terminal-maps/assets/terminals.kml
+dist/terminal-maps/assets/terminals.kml
+src/environments/environment.ts
+NETLIFY_SETUP.md
