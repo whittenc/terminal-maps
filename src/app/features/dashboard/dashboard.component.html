@@ -1,0 +1,66 @@
+<div class="dashboard-container">
+  <h1>Terminal & Shipping Dashboard</h1>
+
+  <div class="stats-grid">
+    <mat-card class="stat-card">
+      <mat-card-header>
+        <mat-icon color="primary">business</mat-icon>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ totalTerminals }}</h2>
+        <p>Total Terminals</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <mat-card-header>
+        <mat-icon color="accent">location_city</mat-icon>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ totalShippingLocations }}</h2>
+        <p>Shipping Locations</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <mat-card-header>
+        <mat-icon color="warn">inventory</mat-icon>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ totalUnits }}</h2>
+        <p>Total Units</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <mat-card class="top-terminals-card">
+    <mat-card-header>
+      <h2>Top Terminals by Shipping Volume</h2>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="terminal-list">
+        <div *ngFor="let item of getTopTerminalsByShipping()" class="terminal-item">
+          <div class="terminal-info">
+            <mat-icon>business</mat-icon>
+            <div>
+              <strong>{{ item.terminal.name }}</strong>
+              <span class="terminal-number">Terminal {{ item.terminal.terminalNumber }}</span>
+            </div>
+          </div>
+          <div class="terminal-count">
+            <strong>{{ item.count }}</strong> locations
+          </div>
+        </div>
+        <div *ngIf="totalTerminals === 0" class="no-data">
+          No terminal data available
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="viewMap()">
+        <mat-icon>map</mat-icon>
+        View Map
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

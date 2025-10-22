@@ -1,64 +1,28 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #sidenav mode="side" [(opened)]="sidenavOpened" class="sidenav">
-    <app-sidebar
-      [terminals]="terminals"
-      [selectedTerminal]="selectedTerminal"
-      [expandedShippingTerminals]="expandedShippingTerminals"
-      [getShippingCountByTerminal]="getShippingCountByTerminal.bind(this)"
-      [getShippingCitiesByTerminal]="getShippingCitiesByTerminal.bind(this)"
-      (terminalFilterChanged)="onTerminalFilterChange($event)"
-      (terminalClicked)="onTerminalClick($event)"
-      (terminalDetailsRequested)="showTerminalDetails($event.terminal, $event.event)"
-      (shippingToggled)="toggleShippingDestinations($event.terminal, $event.event)"
-    ></app-sidebar>
-  </mat-sidenav>
+<mat-toolbar color="primary" class="app-toolbar">
+  <span>{{ title }}</span>
+  <span class="toolbar-spacer"></span>
+  <button
+    mat-button
+    [class.active-route]="isRouteActive('/dashboard')"
+    (click)="navigateToDashboard()">
+    <mat-icon>dashboard</mat-icon>
+    Dashboard
+  </button>
+  <button
+    mat-button
+    [class.active-route]="isRouteActive('/map')"
+    (click)="navigateToMap()">
+    <mat-icon>map</mat-icon>
+    Map View
+  </button>
+</mat-toolbar>
 
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        mat-icon-button
-        (click)="sidenav.toggle()"
-        class="menu-button"
-      >
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>{{ title }}</span>
-      <span class="toolbar-spacer"></span>
-      <div class="summary-display">
-        <mat-icon>analytics</mat-icon>
-        <span class="summary-text">
-          {{ terminals.length }} Terminals • {{ getTotalUnits() }} Units
-        </span>
-      </div>
-      <button mat-icon-button (click)="toggleLayerControls()" title="Toggle Layers">
-        <mat-icon>layers</mat-icon>
-      </button>
-      <button mat-button (click)="centerOnTerminals()">
-        <mat-icon>my_location</mat-icon> Center on Terminals
-      </button>
-      <button mat-button (click)="centerOnShipping()">
-        <mat-icon>local_shipping</mat-icon> Center on Shipping
-      </button>
-    </mat-toolbar>
+<mat-progress-bar
+  *ngIf="isLoading"
+  mode="indeterminate"
+  color="accent">
+</mat-progress-bar>
 
-    <div class="map-container">
-      <app-map
-        [center]="center"
-        [zoom]="zoom"
-        [terminals]="getVisibleTerminals()"
-        [shippingLocations]="getVisibleShippingLocations()"
-        [selectedTerminal]="selectedTerminal"
-        [isLoading]="isLoading"
-        [isShippingLayerVisible]="isShippingLayerVisible()"
-        (terminalClicked)="onTerminalClick($event)"
-        (shippingClicked)="onShippingLocationClick($event)"
-      ></app-map>
-
-      <app-layer-control
-        [visible]="layerControlsVisible"
-        [layers]="layers"
-        (layerToggled)="onLayerToggled($event)"
-      ></app-layer-control>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<div class="app-container">
+  <router-outlet></router-outlet>
+</div>
