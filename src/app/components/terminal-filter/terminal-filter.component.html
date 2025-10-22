@@ -9,13 +9,14 @@
         <mat-icon>clear_all</mat-icon>
         Show All Terminals
       </mat-option>
-      <mat-option
-        *ngFor="let terminal of terminals"
-        [value]="terminal.terminalNumber"
-      >
-        <mat-icon>business</mat-icon>
-        {{ terminal.terminalNumber }} - {{ terminal.name }}
-      </mat-option>
+      @for (terminal of terminals; track terminal.id) {
+        <mat-option
+          [value]="terminal.terminalNumber"
+        >
+          <mat-icon>business</mat-icon>
+          {{ terminal.terminalNumber }} - {{ terminal.name }}
+        </mat-option>
+      }
     </mat-select>
   </mat-form-field>
 </div>

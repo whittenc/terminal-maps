@@ -35,7 +35,17 @@ export class GoogleMapsLoaderService {
 
       // Create script element
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMapsApiKey}`;
+      const apiKey = environment.googleMapsApiKey;
+
+      // If no API key is provided, show a warning but attempt to load anyway
+      if (!apiKey || apiKey === '') {
+        console.warn('⚠️ Google Maps API key is not configured. Please add your API key to src/environments/environment.ts');
+        console.warn('Get your API key at: https://console.cloud.google.com/google/maps-apis/');
+        script.src = `https://maps.googleapis.com/maps/api/js`;
+      } else {
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
+      }
+
       script.async = true;
       script.defer = true;
 

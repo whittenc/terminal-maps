@@ -1,16 +1,20 @@
-<div id="layer-controls" *ngIf="visible">
-  <p><b>Map Layers</b></p>
-  <div class="layer-item" *ngFor="let layer of layers">
-    <mat-checkbox
-      [checked]="layer.visible"
-      (change)="onToggleLayer(layer)"
-      [color]="layer.id === 'terminals' ? 'accent' : 'primary'"
-      class="layer-checkbox"
-    >
-      <div class="layer-info">
-        <mat-icon [style.color]="layer.color" class="layer-icon">{{ layer.icon }}</mat-icon>
-        <span class="layer-name">{{ layer.name }}</span>
+@if (visible) {
+  <div id="layer-controls">
+    <p><b>Map Layers</b></p>
+    @for (layer of layers; track layer.id) {
+      <div class="layer-item">
+        <mat-checkbox
+          [checked]="layer.visible"
+          (change)="onToggleLayer(layer)"
+          [color]="layer.id === 'terminals' ? 'accent' : 'primary'"
+          class="layer-checkbox"
+        >
+          <div class="layer-info">
+            <mat-icon [style.color]="layer.color" class="layer-icon">{{ layer.icon }}</mat-icon>
+            <span class="layer-name">{{ layer.name }}</span>
+          </div>
+        </mat-checkbox>
       </div>
-    </mat-checkbox>
+    }
   </div>
-</div>
+}

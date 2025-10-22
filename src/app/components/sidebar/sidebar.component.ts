@@ -1,9 +1,24 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { Terminal } from '../../services/terminal.service';
+import { TerminalFilterComponent } from '../terminal-filter/terminal-filter.component';
 import { trigger, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-sidebar',
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatTabsModule,
+    MatDividerModule,
+    MatIconModule,
+    MatButtonModule,
+    TerminalFilterComponent
+  ],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
   animations: [

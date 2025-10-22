@@ -1,9 +1,17 @@
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { GoogleMap } from '@angular/google-maps';
+import { GoogleMap, GoogleMapsModule, MapMarker } from '@angular/google-maps';
+import { CommonModule } from '@angular/common';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Terminal, ShippingLocation } from '../../services/terminal.service';
 
 @Component({
   selector: 'app-map',
+  standalone: true,
+  imports: [
+    CommonModule,
+    GoogleMapsModule,
+    MatProgressSpinnerModule
+  ],
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })

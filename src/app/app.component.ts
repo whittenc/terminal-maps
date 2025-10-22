@@ -1,15 +1,35 @@
 import { Component, OnInit, ViewChild, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { CommonModule } from '@angular/common';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { HttpClient } from '@angular/common/http';
 import { Terminal, ShippingLocation, TerminalService } from './services/terminal.service';
 import { MapStateService, MapLayer } from './services/map-state.service';
 import { KmlParserService } from './services/kml-parser.service';
 import { GoogleMapsLoaderService } from './services/google-maps-loader.service';
 import { MapComponent } from './components/map/map.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { LayerControlComponent } from './components/layer-control/layer-control.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MapComponent,
+    SidebarComponent,
+    LayerControlComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
@@ -237,6 +257,13 @@ export class AppComponent implements OnInit {
 
 @Component({
   selector: 'terminal-details-dialog',
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule
+  ],
   template: `
     <h2 mat-dialog-title>
       <mat-icon>business</mat-icon>

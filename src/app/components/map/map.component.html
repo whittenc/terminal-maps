@@ -1,45 +1,52 @@
 <div class="map-wrapper">
-  <div *ngIf="isLoading" class="spinner-overlay">
-    <mat-spinner></mat-spinner>
-  </div>
+  @if (isLoading) {
+    <div class="spinner-overlay">
+      <mat-spinner></mat-spinner>
+    </div>
+  }
 
-  <google-map
-    *ngIf="!isLoading"
-    height="100%"
-    width="100%"
-    [zoom]="zoom"
-    [center]="center"
-    [options]="mapOptions"
-  >
-    <!-- Terminals -->
-    <map-marker
-      *ngFor="let terminal of terminals"
-      [position]="terminal.position"
-      [options]="getTerminalMarkerOptions(terminal)"
-      [title]="getTerminalTitle(terminal)"
-      (mapClick)="onTerminalClick(terminal)"
-    ></map-marker>
+  @if (!isLoading) {
+    <google-map
+      height="100%"
+      width="100%"
+      [zoom]="zoom"
+      [center]="center"
+      [options]="mapOptions"
+    >
+      <!-- Terminals -->
+      @for (terminal of terminals; track terminal.id) {
+        <map-marker
+          [position]="terminal.position"
+          [options]="getTerminalMarkerOptions(terminal)"
+          [title]="getTerminalTitle(terminal)"
+          (mapClick)="onTerminalClick(terminal)"
+        ></map-marker>
+      }
 
-    <!-- Shipping Locations -->
-    <map-marker
-      *ngFor="let location of shippingLocations"
-      [position]="location.position"
-      [options]="getShippingMarkerOptions(location)"
-      (mapClick)="onShippingClick(location)"
-    ></map-marker>
-  </google-map>
+      <!-- Shipping Locations -->
+      @for (location of shippingLocations; track location.id) {
+        <map-marker
+          [position]="location.position"
+          [options]="getShippingMarkerOptions(location)"
+          (mapClick)="onShippingClick(location)"
+        ></map-marker>
+      }
+    </google-map>
+  }
 
-  <div id="legend" *ngIf="isShippingLayerVisible">
-    <p><b>Unit Count</b></p>
-    <div class="legend-item"><div class="color-box step1"></div> 1 - 5</div>
-    <div class="legend-item"><div class="color-box step2"></div> 6 - 10</div>
-    <div class="legend-item"><div class="color-box step3"></div> 11 - 15</div>
-    <div class="legend-item"><div class="color-box step4"></div> 16 - 20</div>
-    <div class="legend-item"><div class="color-box step5"></div> 21 - 25</div>
-    <div class="legend-item"><div class="color-box step6"></div> 26 - 30</div>
-    <div class="legend-item"><div class="color-box step7"></div> 31 - 35</div>
-    <div class="legend-item"><div class="color-box step8"></div> 36 - 40</div>
-    <div class="legend-item"><div class="color-box step9"></div> 41 - 45</div>
-    <div class="legend-item"><div class="color-box step10"></div> &gt; 45</div>
-  </div>
+  @if (isShippingLayerVisible) {
+    <div id="legend">
+      <p><b>Unit Count</b></p>
+      <div class="legend-item"><div class="color-box step1"></div> 1 - 5</div>
+      <div class="legend-item"><div class="color-box step2"></div> 6 - 10</div>
+      <div class="legend-item"><div class="color-box step3"></div> 11 - 15</div>
+      <div class="legend-item"><div class="color-box step4"></div> 16 - 20</div>
+      <div class="legend-item"><div class="color-box step5"></div> 21 - 25</div>
+      <div class="legend-item"><div class="color-box step6"></div> 26 - 30</div>
+      <div class="legend-item"><div class="color-box step7"></div> 31 - 35</div>
+      <div class="legend-item"><div class="color-box step8"></div> 36 - 40</div>
+      <div class="legend-item"><div class="color-box step9"></div> 41 - 45</div>
+      <div class="legend-item"><div class="color-box step10"></div> &gt; 45</div>
+    </div>
+  }
 </div>
