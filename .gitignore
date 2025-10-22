@@ -38,3 +38,4 @@ dist/terminal-maps/assets/terminals.kml
 dist/terminal-maps/assets/terminals.kml
 src/environments/environment.ts
 NETLIFY_SETUP.md
+ANGULAR_17_UPGRADE_GUIDE.md
